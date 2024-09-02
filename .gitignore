@@ -1,8 +1,9 @@
-# Configuration
+# Environment and configuration files
 .env*
 /config/parameters.yml
+/.env*
 
-# Composer
+# Composer dependencies
 /vendor/
 
 # Contao Manager
@@ -16,7 +17,6 @@
 !/system/config/
 /system/config/localconfig.php
 /var/
-
 
 # Skip files
 /system/modules/*/.skip
