@@ -1,0 +1,15 @@
+{
+    "name": "contao-components/altcha",
+    "type": "contao-component",
+    "description": "ALTCHA integration for Contao Open Source CMS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Regeci",
+            "homepage": "https://github.com/ovx"
+        }
+    ],
+    "require": {
+        "contao-components/installer": "^1.0.9"
+    }
+}

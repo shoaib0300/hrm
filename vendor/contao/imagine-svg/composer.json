@@ -1,0 +1,61 @@
+{
+    "name": "contao/imagine-svg",
+    "type": "library",
+    "description": "Contao Imagine SVG library",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Martin Auswöger",
+            "homepage": "https://github.com/ausi"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "ext-dom": "*",
+        "imagine/imagine": "^1.1"
+    },
+    "require-dev": {
+        "contao/easy-coding-standard": "^3.0",
+        "contao/test-case": "^4.4",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-phpunit": "^0.12.8",
+        "phpstan/phpstan-symfony": "^0.12.6",
+        "phpunit/phpunit": "^8.5.4",
+        "psalm/plugin-phpunit": "^0.15",
+        "psalm/plugin-symfony": "^2.0",
+        "slam/phpstan-extensions": "^5.0",
+        "symfony/filesystem": "^5.0",
+        "thecodingmachine/phpstan-strict-rules": "^0.12",
+        "vimeo/psalm": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Contao\\ImagineSvg\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Contao\\ImagineSvg\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "all": [
+            "@unit-tests",
+            "@cs-fixer",
+            "@phpstan",
+            "@psalm"
+        ],
+        "cs-fixer": [
+            "vendor/bin/ecs check src tests --config vendor/contao/easy-coding-standard/config/default.php --fix --ansi"
+        ],
+        "phpstan": [
+            "vendor/bin/phpstan analyze src tests --level=6 --memory-limit=1G --ansi"
+        ],
+        "psalm": [
+            "vendor/bin/psalm --no-suggestions --threads=4"
+        ],
+        "unit-tests": [
+            "vendor/bin/phpunit --colors=always"
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/tl_news_archive.php" source-language="en" target-language="lv">
+    <body>
+      <trans-unit id="tl_news_archive.title.0">
+        <source>Title</source>
+        <target>Virsraksts</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.title.1">
+        <source>Please enter a news archive title.</source>
+        <target>Lūdzu ievadiet jaunumu arhīva virsrakstu.</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.jumpTo.0">
+        <source>Redirect page</source>
+        <target>Pārsūtīšanas lapa</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.jumpTo.1">
+        <source>Please choose the newsreader page to which visitors will be redirected when clicking a news item.</source>
+        <target>Lūdzu, izvēlieties jaunumu lasītāja lapu, uz kuru apmeklētāji tiks novirzīti, noklikšķinot uz jaunumu vienuma.</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.protected.0">
+        <source>Protect archive</source>
+        <target>Aizsargāt arhīvu</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.protected.1">
+        <source>Show news items to certain member groups only.</source>
+        <target>Rādīt jaunumu vienumus tikai noteiktām biedru grupām.</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.groups.0">
+        <source>Allowed member groups</source>
+        <target>Atļautās biedru grupas</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.groups.1">
+        <source>These groups will be able to see the news items in this archive.</source>
+        <target>Šīm biedru grupām tiks atļauts apskatīt šī arhīva ziņas.</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.tstamp.0">
+        <source>Revision date</source>
+        <target>Pārskatījuma datums</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.tstamp.1">
+        <source>Date and time of the latest revision</source>
+        <target>Pēdējā pārskatījuma datums un laiks</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.title_legend">
+        <source>Title and redirect page</source>
+        <target>Nosaukums un virzienmaiņas lapa</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.protected_legend">
+        <source>Access protection</source>
+        <target>Piekļuves aizsardzība</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.feeds.0">
+        <source>News feeds</source>
+        <target>Jaunumu plūsmas</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.feeds.1">
+        <source>Manage news feeds</source>
+        <target>Pārvaldīt jaunumu plūsmas</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.new.0">
+        <source>New</source>
+        <target>Jauns</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.new.1">
+        <source>Create a new news archive</source>
+        <target>Izveidot jaunu jaunumu arhīvu</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.show">
+        <source>Show the details of news archive ID %s</source>
+        <target>Rādīt jaunumu arhīva ID %s detaļas</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.edit">
+        <source>Edit news archive ID %s</source>
+        <target>Rediģēt jaunumu arhīvu ID %s</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.children">
+        <source>Edit the news items of news archive ID %s</source>
+        <target>Rediģēt jaunumu arhīva ID %s jaunumu vienumus</target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.copy">
+        <source>Duplicate news archive ID %s</source>
+        <target>Dublēt jaunumu arhīvu ID %s </target>
+      </trans-unit>
+      <trans-unit id="tl_news_archive.delete">
+        <source>Delete news archive ID %s</source>
+        <target>Dzēst jaunumu arhīvu ID %s</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

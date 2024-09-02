@@ -1,0 +1,149 @@
+<?php //Contao__CoreBundle__Entity__TrustedDevice__CLASSMETADATA__
+
+return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Contao\\CoreBundle\\Entity\\TrustedDevice',
+            ],
+            'namespace' => [
+                'Contao\\CoreBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'Contao\\CoreBundle\\Entity\\TrustedDevice',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'created' => [
+                        'fieldName' => 'created',
+                        'type' => 'datetime',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'created',
+                    ],
+                    'userClass' => [
+                        'fieldName' => 'userClass',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'userClass',
+                    ],
+                    'userId' => [
+                        'fieldName' => 'userId',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'userId',
+                    ],
+                    'userAgent' => [
+                        'fieldName' => 'userAgent',
+                        'type' => 'text',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'user_agent',
+                    ],
+                    'uaFamily' => [
+                        'fieldName' => 'uaFamily',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'ua_family',
+                    ],
+                    'osFamily' => [
+                        'fieldName' => 'osFamily',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'os_family',
+                    ],
+                    'deviceFamily' => [
+                        'fieldName' => 'deviceFamily',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'device_family',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'created' => 'created',
+                    'userClass' => 'userClass',
+                    'userId' => 'userId',
+                    'user_agent' => 'userAgent',
+                    'ua_family' => 'uaFamily',
+                    'os_family' => 'osFamily',
+                    'device_family' => 'deviceFamily',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'created' => 'created',
+                    'userClass' => 'userClass',
+                    'userId' => 'userId',
+                    'userAgent' => 'user_agent',
+                    'uaFamily' => 'ua_family',
+                    'osFamily' => 'os_family',
+                    'deviceFamily' => 'device_family',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'tl_trusted_device',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+)];

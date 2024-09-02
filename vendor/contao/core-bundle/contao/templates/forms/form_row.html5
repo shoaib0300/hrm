@@ -1,0 +1,17 @@
+<?php
+
+$this->wrapperAttributes = $this
+    ->attr()
+    ->addClass([$this->prefix, $this->class])
+    ->mergeWith($this->wrapperAttributes)
+;
+
+?>
+
+<div<?= $this->wrapperAttributes ?>>
+  <?php $this->block('label'); ?>
+  <?php $this->endblock(); ?>
+
+  <?php $this->block('field'); ?>
+  <?php $this->endblock(); ?>
+</div>

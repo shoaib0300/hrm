@@ -1,0 +1,63 @@
+{
+    "name": "nelmio/security-bundle",
+    "description": "Extra security-related features for Symfony: signed/encrypted cookies, HTTPS/SSL/HSTS handling, cookie session storage, ...",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "keywords": [
+        "security"
+    ],
+    "authors": [
+        {
+            "name": "Nelmio",
+            "homepage": "http://nelm.io"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://github.com/nelmio/NelmioSecurityBundle/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "symfony/deprecation-contracts": "^2.5 || ^3",
+        "symfony/framework-bundle": "^5.4 || ^6.3 || ^7.0",
+        "symfony/http-kernel": "^5.4 || ^6.3 || ^7.0",
+        "symfony/security-core": "^5.4 || ^6.3 || ^7.0",
+        "symfony/security-csrf": "^5.4 || ^6.3 || ^7.0",
+        "symfony/security-http": "^5.4 || ^6.3 || ^7.0",
+        "symfony/yaml": "^5.4 || ^6.3 || ^7.0",
+        "ua-parser/uap-php": "^3.4.4"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.4",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpstan/phpstan-strict-rules": "^1.1",
+        "phpstan/phpstan-symfony": "^1.1",
+        "phpunit/phpunit": "^9.5",
+        "psr/cache": "^1.0 || ^2.0 || ^3.0",
+        "symfony/browser-kit": "^5.4 || ^6.3 || ^7.0",
+        "symfony/cache": "^5.4 || ^6.3 || ^7.0",
+        "symfony/phpunit-bridge": "^6.3 || ^7.0",
+        "symfony/twig-bundle": "^5.4 || ^6.3 || ^7.0",
+        "twig/twig": "^2.10 || ^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nelmio\\SecurityBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nelmio\\SecurityBundle\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.x-dev"
+        }
+    },
+    "scripts": {
+        "phpstan": "phpstan",
+        "test": "phpunit"
+    }
+}

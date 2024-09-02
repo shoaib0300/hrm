@@ -1,0 +1,15 @@
+{
+    "name": "contao-components/mootools",
+    "description": "MooTools integration for Contao Open Source CMS",
+    "license": "MIT",
+    "type": "contao-component",
+    "authors": [
+        {
+            "name": "MooTools Development Team",
+            "homepage": "http://mootools.net/developers"
+        }
+    ],
+    "require": {
+        "contao-components/installer": "^1.0.9"
+    }
+}

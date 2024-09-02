@@ -1,0 +1,15 @@
+{
+    "name": "contao-components/simplemodal",
+    "description": "SimpleModal integration for Contao Open Source CMS",
+    "license": "MIT",
+    "type": "contao-component",
+    "authors": [
+        {
+            "name": "Marco Dell'Anna",
+            "homepage": "https://plasm.it"
+        }
+    ],
+    "require": {
+        "contao-components/installer": "^1.0.9"
+    }
+}

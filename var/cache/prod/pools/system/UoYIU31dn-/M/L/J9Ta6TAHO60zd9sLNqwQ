@@ -1,0 +1,175 @@
+<?php //Contao__CoreBundle__Entity__CrawlQueue__CLASSMETADATA__
+
+return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Contao\\CoreBundle\\Entity\\CrawlQueue',
+            ],
+            'namespace' => [
+                'Contao\\CoreBundle\\Entity',
+            ],
+            'rootEntityName' => [
+                'Contao\\CoreBundle\\Entity\\CrawlQueue',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'unsigned' => true,
+                        ],
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'jobId' => [
+                        'fieldName' => 'jobId',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 128,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'fixed' => true,
+                        ],
+                        'columnName' => 'job_id',
+                    ],
+                    'uri' => [
+                        'fieldName' => 'uri',
+                        'type' => 'text',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'uri',
+                    ],
+                    'uriHash' => [
+                        'fieldName' => 'uriHash',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 40,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'options' => [
+                            'fixed' => true,
+                        ],
+                        'columnName' => 'uri_hash',
+                    ],
+                    'foundOn' => [
+                        'fieldName' => 'foundOn',
+                        'type' => 'text',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'found_on',
+                    ],
+                    'level' => [
+                        'fieldName' => 'level',
+                        'type' => 'smallint',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'level',
+                    ],
+                    'processed' => [
+                        'fieldName' => 'processed',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'processed',
+                    ],
+                    'tags' => [
+                        'fieldName' => 'tags',
+                        'type' => 'text',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => null,
+                        'columnName' => 'tags',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'job_id' => 'jobId',
+                    'uri' => 'uri',
+                    'uri_hash' => 'uriHash',
+                    'found_on' => 'foundOn',
+                    'level' => 'level',
+                    'processed' => 'processed',
+                    'tags' => 'tags',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'jobId' => 'job_id',
+                    'uri' => 'uri',
+                    'uriHash' => 'uri_hash',
+                    'foundOn' => 'found_on',
+                    'level' => 'level',
+                    'processed' => 'processed',
+                    'tags' => 'tags',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'tl_crawl_queue',
+                    'indexes' => [
+                        'job_id' => [
+                            'columns' => [
+                                'job_id',
+                            ],
+                        ],
+                        'uri_hash' => [
+                            'columns' => [
+                                'uri_hash',
+                            ],
+                        ],
+                        'processed' => [
+                            'columns' => [
+                                'processed',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+)];

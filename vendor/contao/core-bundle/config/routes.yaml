@@ -1,0 +1,17 @@
+contao:
+    resource: '@ContaoCoreBundle/src/Controller'
+    type: attribute
+
+contao_images:
+    resource: .
+    type: contao_images
+
+# Redirect /contao/ to /contao
+contao_backend_redirect:
+    path: '%contao.backend.route_prefix%/'
+    defaults:
+        _scope: backend
+        _store_referrer: false
+        _controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::redirectAction
+        route: contao_backend
+        permanent: true

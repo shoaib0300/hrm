@@ -1,0 +1,13 @@
+# Composer
+/composer.lock
+/vendor/
+
+# Composer bin
+/tools/*/vendor
+
+# PhpUnit
+/phpunit.xml
+/.phpunit.result.cache
+
+# Generated files
+/.generated
