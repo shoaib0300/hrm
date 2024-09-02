@@ -1,7 +1,6 @@
 # Configuration
 .env*
 /config/parameters.yml
-/.env*
 
 # Composer
 /vendor/
