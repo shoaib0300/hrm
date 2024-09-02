@@ -1,14 +1,21 @@
 <?php
 use Contao\FrontendUser;
 
+// Start PHP session
 $frontendUser = FrontendUser::getInstance();
 $this->username = $frontendUser->username;
 $this->isLoggedIn = $frontendUser->id > 0;
+
+$currentUrl = $_SERVER['REQUEST_URI'] ?? '';
+if (!$this->isLoggedIn && $currentUrl !== '/login') {
+    header('Location: /login');
+    exit;
+}
 ?>
 <?php if ($this->isLoggedIn) : ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="brand-logo" href="/">
-            <img src="/files/tpl/assets/logos/PENDORA_wortmarke.png" alt="Logo" width="287" height="87">
+            <img src="/files/tpl/assets/logos/hr.png" alt="Logo" width="287" height="87">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,6 +42,7 @@ $this->isLoggedIn = $frontendUser->id > 0;
             <?php endif; ?>
             </ul>
             user logged in as: <a class="nav-link-name" href="/personal-data"><?= $this->username ?></a>
+            <a class="nav-link" href="/logout">Logout</a>
         </div>
     </nav>
 <?php endif; ?>
