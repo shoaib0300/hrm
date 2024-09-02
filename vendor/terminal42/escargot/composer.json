@@ -1,0 +1,56 @@
+{
+    "name": "terminal42/escargot",
+    "description": "A web crawler or spider library based on Symfony components",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["escargot", "index", "search", "crawl", "spider"],
+    "homepage": "https://www.terminal42.ch",
+    "authors": [
+        {
+            "name": "Yanick Witschi",
+            "homepage": "https://github.com/toflar",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/terminal42/escargot"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-simplexml": "*",
+        "nyholm/psr7": "^1.1",
+        "psr/http-message": "^1.0 || ^2.0",
+        "psr/log": "^1.1 || ^2.0 || ^3.0",
+        "symfony/clock": "^6.2 || ^7.0",
+        "symfony/dom-crawler": "^5.4 || ^6.0 || ^7.0",
+        "symfony/event-dispatcher": "^5.4 || ^6.0 || ^7.0",
+        "symfony/http-client": "^5.4 || ^6.0 || ^7.0",
+        "webignition/robots-txt-file": "^3.0"
+    },
+    "require-dev": {
+        "doctrine/dbal": "^3.6",
+        "fig/log-test": "^1.0",
+        "symfony/finder": "^5.4|| ^6.0 || ^7.0",
+        "symfony/phpunit-bridge": "^5.4 || ^6.0 || ^7.0",
+        "terminal42/contao-build-tools": "@dev"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "allow-plugins": {
+            "terminal42/contao-build-tools": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Terminal42\\Escargot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Terminal42\\Escargot\\Tests\\": "tests/"
+        }
+    }
+}

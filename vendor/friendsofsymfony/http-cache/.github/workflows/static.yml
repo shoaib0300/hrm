@@ -1,0 +1,69 @@
+name: Static analysis
+
+on:
+  push:
+    branches:
+      - "*.x"
+  pull_request:
+
+jobs:
+  phpstan-src:
+    name: PHPStan src
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Pull in optional dependencies
+        run: composer require --no-update phpunit/phpunit toflar/psr6-symfony-http-cache-store:^4.2
+
+      - name: Cache Vendor
+        id: cache-vendor
+        uses: actions/cache@v4
+        with:
+          path: vendor
+          key: ${{ runner.os }}-vendor
+
+      - name: PHPStan
+        uses: docker://oskarstark/phpstan-ga
+        with:
+          args: analyze --no-progress
+
+  phpstan-tests:
+    name: PHPStan tests
+    runs-on: ubuntu-latest
+    env:
+      REQUIRE_DEV: "true"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Pull in optional dependencies
+        run: composer require --no-update phpunit/phpunit toflar/psr6-symfony-http-cache-store:^4.2
+
+      - name: Cache Vendor
+        id: cache-vendor
+        uses: actions/cache@v4
+        with:
+          path: vendor
+          key: ${{ runner.os }}-vendor
+
+      - name: PHPStan
+        uses: docker://oskarstark/phpstan-ga
+        with:
+          args: analyze --no-progress -c phpstan.tests.neon.dist
+
+  php-cs-fixer:
+    name: PHP-CS-Fixer
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: PHP-CS-Fixer
+        uses: docker://oskarstark/php-cs-fixer-ga
+        with:
+          args: --dry-run --diff

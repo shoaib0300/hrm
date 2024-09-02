@@ -1,0 +1,7 @@
+<?php $this->extend('block_searchable') ?>
+
+<?php $this->block('wrapper'); ?>
+  <!-- indexer::stop -->
+  <?php $this->parent(); ?>
+  <!-- indexer::continue -->
+<?php $this->endblock(); ?>

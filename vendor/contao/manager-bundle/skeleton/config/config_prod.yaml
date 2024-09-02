@@ -1,0 +1,32 @@
+imports:
+    - { resource: config.yaml }
+
+# Contao configuration
+contao:
+    pretty_error_screens: true
+
+# Monolog configuration
+monolog:
+    channels:
+        - deprecation
+    handlers:
+        contao:
+            type: service
+            id: contao.monolog.handler
+        main:
+            type: fingers_crossed
+            action_level: error
+            handler: nested
+            excluded_http_codes: [400, 401, 403, 404, 503]
+            channels: ['!deprecation']
+        nested:
+            type: rotating_file
+            max_files: 10
+            path: '%kernel.logs_dir%/%kernel.environment%.log'
+            level: info
+        console:
+            type: console
+        # Do not log deprecation messages by default because they might flood the file system.
+        deprecation:
+            type: 'null'
+            channels: [deprecation]

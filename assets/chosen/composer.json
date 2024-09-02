@@ -1,0 +1,15 @@
+{
+    "name": "contao-components/chosen",
+    "description": "Chosen integration for Contao Open Source CMS",
+    "license": "MIT",
+    "type": "contao-component",
+    "authors": [
+        {
+            "name": "Jules Janssen",
+            "homepage": "https://github.com/julesjanssen"
+        }
+    ],
+    "require": {
+        "contao-components/installer": "^1.0.9"
+    }
+}

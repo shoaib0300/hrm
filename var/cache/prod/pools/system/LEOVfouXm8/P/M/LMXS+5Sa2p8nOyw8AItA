@@ -1,0 +1,128 @@
+<?php //contao.twig.inspector
+
+return [PHP_INT_MAX, [
+    '/var/www/hrm/vendor/doctrine/doctrine-bundle/templates/Collector/database.svg' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/doctrine/doctrine-bundle/templates/Collector/explain.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/doctrine/doctrine-bundle/templates/Collector/icon.svg' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/scheb/2fa-bundle/Resources/views/Authentication/form.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/knplabs/knp-menu-bundle/templates/menu.html.twig' => [
+        'slots' => [],
+        'parent' => 'knp_menu.html.twig',
+    ],
+    '/var/www/hrm/vendor/symfony/security-bundle/Resources/views/Collector/icon.svg' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Frontend/preview_toolbar_base.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Frontend/preview_toolbar_base_js.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Error/layout.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Error/error.html.twig' => [
+        'slots' => [],
+        'parent' => '@ContaoCore/Error/layout.html.twig',
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Error/missing_route_parameters.html.twig' => [
+        'slots' => [],
+        'parent' => '@ContaoCore/Error/layout.html.twig',
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Error/service_unavailable.html.twig' => [
+        'slots' => [],
+        'parent' => '@ContaoCore/Error/layout.html.twig',
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Error/backend.html.twig' => [
+        'slots' => [],
+        'parent' => '@ContaoCore/Error/layout.html.twig',
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Error/invalid_request_token.html.twig' => [
+        'slots' => [],
+        'parent' => '@ContaoCore/Error/layout.html.twig',
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Collector/contao.svg' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Backend/be_undo_label.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Backend/be_filesync_report.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Backend/be_menu.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Backend/be_route_path.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Backend/be_route_conflicts.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Backend/be_header_menu.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Image/Studio/_macros.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/contao/core-bundle/templates/Image/Studio/figure.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu_ordered.html.twig' => [
+        'slots' => [],
+        'parent' => 'knp_menu.html.twig',
+    ],
+    '/var/www/hrm/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu_base.html.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig' => [
+        'slots' => [],
+        'parent' => 'knp_menu_base.html.twig',
+    ],
+    '/var/www/hrm/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.txt.twig' => [
+        'slots' => [],
+        'parent' => '@email/zurb_2/notification/body.txt.twig',
+    ],
+    '/var/www/hrm/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.html.twig' => [
+        'slots' => [],
+        'parent' => '@email/zurb_2/notification/body.html.twig',
+    ],
+    '/var/www/hrm/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/main.css' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/notification/body.txt.twig' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+    '/var/www/hrm/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/notification/local.css' => [
+        'slots' => [],
+        'parent' => null,
+    ],
+]];
