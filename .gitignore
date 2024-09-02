@@ -1,0 +1,28 @@
+# Configuration
+.env*
+/config/parameters.yml
+
+# Composer
+/vendor/
+
+# Contao Manager
+/contao-manager/
+
+# Generated folders
+/assets/
+/files/*
+/public/*
+/system/*
+!/system/config/
+/system/config/localconfig.php
+/var/
+
+
+# Skip files
+/system/modules/*/.skip
+
+# Custom
+.vscode*
+/.idea
+!/files/tpl
+!/files/favicons
