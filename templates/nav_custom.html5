@@ -1,0 +1,40 @@
+<?php
+use Contao\FrontendUser;
+
+$frontendUser = FrontendUser::getInstance();
+$this->username = $frontendUser->username;
+$this->isLoggedIn = $frontendUser->id > 0;
+?>
+<?php if ($this->isLoggedIn) : ?>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="brand-logo" href="/">
+            <img src="/files/tpl/assets/logos/PENDORA_wortmarke.png" alt="Logo" width="287" height="87">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <?php if (isset($this->items) && is_array($this->items)) : ?>
+                <?php 
+                $currentUrl = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : ''; 
+                ?>
+                <?php foreach ($this->items as $item) : ?>
+                    <?php if (is_array($item)) : ?>
+                        <?php
+                        // Determine if this item should be active
+                        $isActive = (isset($item['href']) && $currentUrl == htmlspecialchars($item['href']));
+                        ?>
+                        <li class="nav-item <?= $isActive ? 'active' : '' ?>">
+                            <a class="nav-link" href="<?php echo htmlspecialchars($item['href']); ?>">
+                                <?php echo htmlspecialchars($item['title']); ?>
+                            </a>
+                        </li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
+            </ul>
+            user logged in as: <a class="nav-link-name" href="/personal-data"><?= $this->username ?></a>
+        </div>
+    </nav>
+<?php endif; ?>
