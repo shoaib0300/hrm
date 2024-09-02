@@ -15,7 +15,7 @@
 /system/*
 !/system/config/
 /system/config/localconfig.php
-/var/*
+/var/
 
 
 # Skip files
