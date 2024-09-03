@@ -1,0 +1,22 @@
+{
+    "name": "lupcom/contao-member-newsfeed-bundle",
+    "type": "contao-bundle",
+    "require": {
+        "contao/core-bundle": "^4.13 || ^5.0"
+    },
+    "license": "LGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Lupcom\\ContaoMemberNewsfeedBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shoaib Sarwar",
+            "email": "shoaib.sarwar@lupcom.de"
+        }
+    ],
+    "extra": {
+        "contao-manager-plugin": "Lupcom\\ContaoMemberNewsfeedBundle\\ContaoManager\\Plugin"
+    }
+}

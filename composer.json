@@ -8,7 +8,8 @@
         "contao/faq-bundle": "5.4.*",
         "contao/listing-bundle": "5.4.*",
         "contao/news-bundle": "5.4.*",
-        "contao/newsletter-bundle": "5.4.*"
+        "contao/newsletter-bundle": "5.4.*",
+        "lupcom/contao-member-newsfeed-bundle": "dev-main"
     },
     "extra": {
         "public-dir": "public",
@@ -21,5 +22,18 @@
         "post-update-cmd": [
             "@php vendor/bin/contao-setup"
         ]
+    },
+    "repositories": {
+        "lupcom/contao-member-newsfeed-bundle": {
+            "type": "path",
+            "url": "src/Lupcom/contao-member-newsfeed-bundle"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "php-http/discovery": true,
+            "contao/manager-plugin": true
+        }
     }
 }

@@ -1,0 +1,4 @@
+# config/routes.yaml
+your_vendor_member_newsfeed:
+    resource: '../src/Controller/'
+    type: annotation

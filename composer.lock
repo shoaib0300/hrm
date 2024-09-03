@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2917d44406b9d1263283dd259772b302",
+    "content-hash": "a3add2cd0725874a61942013be26612c",
     "packages": [
         {
             "name": "ausi/slug-generator",
@@ -4989,6 +4989,39 @@
                 }
             ],
             "time": "2024-03-23T07:42:40+00:00"
+        },
+        {
+            "name": "lupcom/contao-member-newsfeed-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "src/Lupcom/contao-member-newsfeed-bundle",
+                "reference": "0d1d39d380cfca90242a04eb39ff928c580bca47"
+            },
+            "require": {
+                "contao/core-bundle": "^4.13 || ^5.0"
+            },
+            "type": "contao-bundle",
+            "extra": {
+                "contao-manager-plugin": "Lupcom\\ContaoMemberNewsfeedBundle\\ContaoManager\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lupcom\\ContaoMemberNewsfeedBundle\\": "src/"
+                }
+            },
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Shoaib Sarwar",
+                    "email": "shoaib.sarwar@lupcom.de"
+                }
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "masterminds/html5",
@@ -13494,7 +13527,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "contao/conflicts": 20
+        "contao/conflicts": 20,
+        "lupcom/contao-member-newsfeed-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
