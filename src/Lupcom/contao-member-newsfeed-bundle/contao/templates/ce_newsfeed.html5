@@ -1,0 +1,23 @@
+<?php if (!empty($this->headline)): ?>
+    <h1 class="newsfeed-headline"><?php echo htmlspecialchars($this->headline); ?></h1>
+<?php endif; ?>
+
+<?php if (!empty($this->newsfeeds)): ?>
+    <div class="newsfeed-container">
+        <?php foreach ($this->newsfeeds as $newsfeed): ?>
+            <div class="newsfeed-item">
+                <?php if (!empty($newsfeed['image'])): ?>
+                    <img class="newsfeed-image" src="<?php echo htmlspecialchars($newsfeed['image']); ?>" alt="<?php echo htmlspecialchars($newsfeed['title']); ?>">
+                <?php endif; ?>
+                <h2 class="newsfeed-title"><?php echo htmlspecialchars($newsfeed['title']); ?></h2>
+                <p class="newsfeed-date"><?php echo date('F j, Y', strtotime($newsfeed['date'])); ?></p>
+                <p class="newsfeed-author">By <?php echo htmlspecialchars($newsfeed['author']); ?></p>
+                <div class="newsfeed-text">
+                    <?php echo nl2br(htmlspecialchars($newsfeed['text'])); ?>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+<?php else: ?>
+    <p>No newsfeeds available.</p>
+<?php endif; ?>
