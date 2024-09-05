@@ -6,7 +6,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['newsfeed'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG']['tl_content']['newsfeed'],
     'exclude'                 => true,
-    'inputType'               => 'select',
+    'inputType'               => 'text',
     'foreignKey'              => 'tl_newsfeed.title',
     'eval'                    => array('mandatory'=>true, 'includeBlankOption'=>true, 'tl_class'=>'w50'),
     'sql'                     => "int(10) unsigned NOT NULL default '0'",

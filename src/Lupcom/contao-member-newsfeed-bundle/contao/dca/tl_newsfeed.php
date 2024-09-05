@@ -39,15 +39,15 @@ $GLOBALS['TL_DCA']['tl_newsfeed'] = array(
             'label' => &$GLOBALS['TL_LANG']['tl_newsfeed']['date'],
             'exclude' => true,
             'inputType' => 'text',
-            'eval' => array('mandatory' => true, 'rgxp' => 'datim'),
+            'eval' => array('mandatory' => true, 'maxlength' => 255),
             'sql' => "varchar(10) NOT NULL default ''",
         ),
         'author' => array(
             'label' => &$GLOBALS['TL_LANG']['tl_newsfeed']['author'],
             'exclude' => true,
-            'inputType' => 'select',
-            'eval' => array('mandatory' => true),
-            'sql' => "int(10) unsigned NOT NULL default '0'",
+            'inputType' => 'text',
+            'eval' => array('mandatory' => true, 'readonly' => true),
+            'sql' => "varchar(10) NOT NULL default ''",
         ),
         'text' => array(
             'label' => &$GLOBALS['TL_LANG']['tl_newsfeed']['text'],
@@ -60,11 +60,14 @@ $GLOBALS['TL_DCA']['tl_newsfeed'] = array(
             'label' => &$GLOBALS['TL_LANG']['tl_newsfeed']['image'],
             'exclude' => true,
             'inputType' => 'fileTree',
-            'eval' => array('filesOnly' => true, 'fieldType' => 'radio', 'mandatory' => true),
-            'sql' => "binary(16) NULL",
+            'eval' => array('filesOnly' => true, 'fieldType' => 'radio'),
+            'sql' => "binary(200) NULL",
         ),
         'tstamp' => array(
-            'sql' => "int(10) unsigned NOT NULL default '0'",
+            'label'         => &$GLOBALS['TL_LANG']['tl_newsfeed']['tstamp'],
+            'inputType'     => 'text',
+            'eval'          => array('rgxp'=>'datim', 'readonly' => true, 'tl_class'=>'w50'),
+            'sql'           => "varchar(10) NOT NULL default ''"
         ),
     ),
 );

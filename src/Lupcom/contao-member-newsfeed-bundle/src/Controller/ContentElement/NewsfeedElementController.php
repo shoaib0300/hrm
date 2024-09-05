@@ -20,13 +20,15 @@ class NewsfeedElementController extends ContentElement
             $arrNewsFeeds[] = array(
                 'title' => $objNewsFeeds->title,
                 'date' => $objNewsFeeds->date,
-                'author' => $objNewsFeeds->author,  // You may need to fetch the author name separately
+                'author' => $objNewsFeeds->author, 
                 'text' => $objNewsFeeds->text,
+                'image' => $objNewsFeeds->image,
+                'id' => 'newsfeed/' . $objNewsFeeds->id,
+                'tstamp' => $objNewsFeeds->tstamp,
             );
         }
     
         // Assign the news feed data to the template
         $this->Template->newsfeeds = $arrNewsFeeds;
     }
-    
 }

@@ -7,3 +7,5 @@ $GLOBALS['TL_CTE']['newsfeed'] = array
 (
     'newsfeed' => 'Lupcom\ContaoMemberNewsfeedBundle\Controller\ContentElement\NewsfeedElementController',
 );
+
+// $GLOBALS['FE_MOD']['newsfeed']['frontend_module'] = 'frontend_module';
