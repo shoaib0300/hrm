@@ -13,7 +13,7 @@ class NewsfeedElementController extends ContentElement
     protected function compile()
     {
         // Fetch all news feed entries from the database
-        $objNewsFeeds = Database::getInstance()->execute("SELECT * FROM tl_newsfeed ORDER BY date DESC");
+        $objNewsFeeds = Database::getInstance()->execute("SELECT * FROM tl_newsfeed ORDER BY tstamp DESC");
         $arrNewsFeeds = array();
     
         while ($objNewsFeeds->next()) {

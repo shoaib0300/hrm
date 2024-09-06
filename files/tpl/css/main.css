@@ -10228,6 +10228,110 @@ textarea.form-control-lg {
   }
 }
 
+/* General form styles */
+.ce_form.block {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.ce_form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formbody {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input field styles */
+.widget {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type=text], textarea, input[type=file] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input[type=text]:focus, textarea:focus, input[type=file]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Specific widget styles */
+.widget-text input, .widget-textarea textarea {
+  width: 100%;
+}
+
+.widget-upload input {
+  padding: 5px;
+}
+
+.mandatory span.mandatory {
+  color: red;
+}
+
+input[readonly] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+/* Button styles */
+.widget-submit button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.widget-submit button:hover {
+  background-color: #0056b3;
+}
+
+.widget-submit button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .ce_form.block {
+    padding: 15px;
+  }
+  .ce_form h2 {
+    font-size: 20px;
+  }
+  input[type=text], textarea, input[type=file], button {
+    font-size: 14px;
+  }
+}
 * {
   box-sizing: border-box;
 }

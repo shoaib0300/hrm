@@ -9,7 +9,8 @@
         "contao/listing-bundle": "5.4.*",
         "contao/news-bundle": "5.4.*",
         "contao/newsletter-bundle": "5.4.*",
-        "lupcom/contao-member-newsfeed-bundle": "dev-main"
+        "lupcom/contao-member-newsfeed-bundle": "dev-main",
+        "symfony/security-csrf": "^6.4"
     },
     "extra": {
         "public-dir": "public",
