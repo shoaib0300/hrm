@@ -10,6 +10,7 @@
         "contao/news-bundle": "5.4.*",
         "contao/newsletter-bundle": "5.4.*",
         "lupcom/contao-member-newsfeed-bundle": "dev-main",
+        "lupcom/rapidskeleton-bundle": "v0.0.8",
         "symfony/security-csrf": "^6.4"
     },
     "extra": {
@@ -28,6 +29,10 @@
         "lupcom/contao-member-newsfeed-bundle": {
             "type": "path",
             "url": "src/Lupcom/contao-member-newsfeed-bundle"
+        },
+        "lupcom/rapidskeleton-bundle": {
+            "type": "path",
+            "url": "src/Lupcom/rapidskeleton-bundle"
         }
     },
     "config": {
